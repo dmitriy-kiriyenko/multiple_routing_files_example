@@ -1,5 +1,5 @@
 MultipleRoutingFilesExample::Application.routes.draw do
-  Dir[Rails.root.join("config/routing/**/*.rb")].each { |f| instance_eval(File.read(f)) }
+  Dir[Rails.root.join("config/routes/**/*.rb")].each { |f| instance_eval(File.read(f)) }
 
   namespace :admin do
     concerns :admin
