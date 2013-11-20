@@ -1,4 +1,4 @@
 concern :admin do
-  resource :users
-  resource :comments
+  resources :users
+  resources :comments
 end
